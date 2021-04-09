@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="636.0" prefWidth="335.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OrderDocController">
+   <children>
+      <Label fx:id="node" alignment="CENTER" layoutX="15.0" layoutY="14.0" prefHeight="51.0" prefWidth="306.0" text="NODE">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="price" alignment="CENTER" layoutX="15.0" layoutY="553.0" prefHeight="51.0" prefWidth="306.0" text="0р">
+         <font>
+            <Font name="Arial Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="411.0" prefHeight="30.0" prefWidth="140.0" text="Покупатель: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="373.0" prefHeight="30.0" prefWidth="140.0" text="Менеджер: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="477.0" prefHeight="30.0" prefWidth="140.0" text="Способ оплаты: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="organName" alignment="CENTER" layoutX="15.0" layoutY="127.0" prefHeight="30.0" prefWidth="306.0" text="Орган">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="288.0" prefHeight="30.0" prefWidth="140.0" text="Хирург:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="surgeonName" alignment="CENTER" layoutX="179.0" layoutY="288.0" prefHeight="30.0" prefWidth="140.0" text="Label" />
+      <Label fx:id="adminName" alignment="CENTER" layoutX="179.0" layoutY="373.0" prefHeight="30.0" prefWidth="140.0" text="Label" />
+      <Label fx:id="buyerName" alignment="CENTER" layoutX="179.0" layoutY="411.0" prefHeight="30.0" prefWidth="140.0" text="Label" />
+      <Label fx:id="method" alignment="CENTER" layoutX="179.0" layoutY="477.0" prefHeight="30.0" prefWidth="140.0" text="Label">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="81.0" prefHeight="30.0" prefWidth="140.0" text="Дата: ">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" alignment="CENTER" layoutX="179.0" layoutY="81.0" prefHeight="30.0" prefWidth="140.0" text="Label" />
+      <Line endX="150.0" layoutX="164.0" layoutY="552.0" startX="-139.0" />
+      <Line endX="97.0" layoutX="164.0" layoutY="604.0" startX="-89.0" />
+      <Label fx:id="organSpecification" alignment="CENTER" layoutX="63.0" layoutY="175.0" prefHeight="81.0" prefWidth="214.0" text="Описание" />
+      <Button fx:id="readBtn" layoutX="307.0" layoutY="8.0" mnemonicParsing="false" onAction="#handleBtnReadAction" style="-fx-background-color: #ffffff00;" />
+   </children>
+</AnchorPane>

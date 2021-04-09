@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="647.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateOrderController">
+   <children>
+      <Spinner fx:id="nodeSpinner" layoutX="202.0" layoutY="66.0" prefHeight="34.0" prefWidth="259.0" />
+      <Spinner fx:id="methodSpinner" layoutX="202.0" layoutY="167.0" prefHeight="34.0" prefWidth="259.0" />
+      <Spinner fx:id="buyerSpinner" layoutX="202.0" layoutY="238.0" prefHeight="34.0" prefWidth="259.0" />
+      <Label layoutX="27.0" layoutY="66.0" prefHeight="34.0" prefWidth="120.0" text="Документ:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="167.0" prefHeight="34.0" prefWidth="120.0" text="Способ оплаты:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label layoutX="27.0" layoutY="238.0" prefHeight="34.0" prefWidth="120.0" text="Покупатель:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Label>
+      <Label fx:id="priceText" alignment="CENTER_RIGHT" layoutX="312.0" layoutY="117.0" prefHeight="34.0" prefWidth="149.0" text="0р.">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Label>
+      <CheckBox fx:id="checkNewBuyer" layoutX="27.0" layoutY="281.0" mnemonicParsing="false" onAction="#handleBtnNewBuyerAction" text="Создать нового" />
+      <Button fx:id="saveOrderBtn" layoutX="21.0" layoutY="581.0" mnemonicParsing="false" onAction="#handleBtnNewOrderAction" prefHeight="46.0" prefWidth="425.0" text="Оформить заказ">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font></Button>
+      <Label layoutX="21.0" layoutY="14.0" prefHeight="46.0" prefWidth="425.0" text="Новый заказ">
+         <font>
+            <Font name="Arial Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="117.0" prefHeight="34.0" prefWidth="120.0" text="Стоимость:">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lNameEdit" layoutX="104.0" layoutY="324.0" opacity="0.0" prefHeight="34.0" prefWidth="259.0" promptText="Фамилия Покупателя">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="fNameEdit" layoutX="104.0" layoutY="383.0" opacity="0.0" prefHeight="34.0" prefWidth="259.0" promptText="Имя Покупателя">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="emailEdit" layoutX="104.0" layoutY="441.0" opacity="0.0" prefHeight="34.0" prefWidth="259.0" promptText="Email Покупателя">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="614.0" prefWidth="989.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane prefHeight="694.0" prefWidth="1046.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Label layoutX="8.0" layoutY="180.0" prefHeight="37.0" prefWidth="179.0" text="Органы:">
+               <font>
+                  <Font name="Arial Bold" size="21.0" />
+               </font></Label>
+            <TableView fx:id="organsTable" layoutX="8.0" layoutY="225.0" prefHeight="370.0" prefWidth="966.0">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="31.0" text="№" />
+                <TableColumn fx:id="name" prefWidth="191.0" text="Название " />
+                  <TableColumn fx:id="type" prefWidth="134.0" text="Тип органа" />
+                  <TableColumn fx:id="donor" prefWidth="90.0" text="Донор" />
+                  <TableColumn fx:id="surgeon" prefWidth="82.0" text="Хирург" />
+                  <TableColumn fx:id="price" prefWidth="84.0" text="Цена" />
+                  <TableColumn fx:id="conditions" prefWidth="353.0" text="Описание" />
+              </columns>
+            </TableView>
+            <Button fx:id="organBtn" layoutX="620.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleBtnOrganAction" prefWidth="163.0" text="Новый орган" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Button>
+            <Button fx:id="updateBtn" layoutX="460.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleBtnUpdateAction" text="Обновить таблицу" />
+            <Button fx:id="deleteOrganBtn" layoutX="810.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleBtnDeleteAction" text="Удалить выбранный орган" />
+            <TableView fx:id="nodeTable" layoutX="610.0" layoutY="30.0" prefHeight="140.0" prefWidth="350.0">
+              <columns>
+                <TableColumn fx:id="nodeCode" prefWidth="100.0" text="Код документа" />
+                <TableColumn fx:id="nodeOrgan" prefWidth="150.0" text="Орган" />
+                  <TableColumn fx:id="nodeDate" prefWidth="100.0" text="Дата" />
+              </columns>
+            </TableView>
+            <Label layoutX="725.0" layoutY="10.0" text="Ваши документы:">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+         </children></Pane>
+   </children>
+</GridPane>

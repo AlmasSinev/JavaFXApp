@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="651.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateOrganController">
+   <children>
+      <Label layoutX="18.0" layoutY="18.0" prefHeight="36.0" prefWidth="231.0" text="Новый орган">
+         <font>
+            <Font name="Calibri Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nameEdit" layoutX="18.0" layoutY="100.0" prefHeight="25.0" prefWidth="438.0" promptText="Название органа" />
+      <Spinner fx:id="typeSpinner" layoutX="18.0" layoutY="161.0" prefHeight="25.0" prefWidth="438.0" />
+      <Spinner fx:id="donorsSpinner" layoutX="20.0" layoutY="233.0" prefHeight="25.0" prefWidth="438.0" />
+      <TextArea fx:id="specificationEdit" layoutX="19.0" layoutY="291.0" prefHeight="131.0" prefWidth="438.0" promptText="Описание органа" />
+      <Slider fx:id="priceSlider" blockIncrement="500.0" layoutX="24.0" layoutY="462.0" majorTickUnit="100000.0" max="500000.0" minorTickCount="9" prefHeight="17.0" prefWidth="427.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+      <Button fx:id="newOrganBtn" layoutX="18.0" layoutY="585.0" mnemonicParsing="false" onAction="#handleBtnNewOrganAction" prefHeight="41.0" prefWidth="438.0" text="ДОБАВИТЬ" />
+      <Label layoutX="23.0" layoutY="134.0" prefHeight="17.0" prefWidth="183.0" text="Выберите Тип органа" />
+      <Label layoutX="24.0" layoutY="204.0" prefHeight="17.0" prefWidth="163.0" text="Выберите донора" />
+      <Label layoutX="24.0" layoutY="274.0" prefHeight="17.0" prefWidth="199.0" text="Описание" />
+      <Label fx:id="costText" alignment="CENTER" layoutX="146.0" layoutY="522.0" prefHeight="17.0" prefWidth="183.0" text="Стоимость: 0р." textAlignment="JUSTIFY" />
+      <Label layoutX="23.0" layoutY="73.0" prefHeight="17.0" prefWidth="151.0" text="Название" />
+   </children>
+</AnchorPane>

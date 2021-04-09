@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="620.0" prefWidth="1006.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminController">
+   <children>
+      <Label alignment="CENTER" layoutX="773.0" layoutY="21.0" prefHeight="33.0" prefWidth="165.0" text="Хирурги">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="surgeonsTable" layoutX="717.0" layoutY="60.0" prefHeight="466.0" prefWidth="276.0">
+        <columns>
+          <TableColumn fx:id="surgeonId" prefWidth="33.0" text="№" />
+          <TableColumn fx:id="surgeonLName" prefWidth="114.0" text="Фамилия" />
+            <TableColumn fx:id="surgeonFName" minWidth="0.0" prefWidth="102.0" text="Имя" />
+            <TableColumn fx:id="surgeonExp" prefWidth="24.0" text="Exp" />
+        </columns>
+      </TableView>
+      <Button fx:id="createSurgeonBtn" layoutX="717.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleBtnCreateSurgeonAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #ffffff00;" />
+      <Button fx:id="updateSurgeonsBtn" layoutX="938.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleBtnUpdateSurgeonsAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #ffffff00;" />
+      <Button fx:id="deleteSurgeonBtn" layoutX="862.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleBtnDeleteSurgeonAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #ffffff00;" />
+      <Label layoutX="47.0" layoutY="21.0" prefHeight="33.0" prefWidth="144.0" text="Заказы">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="ordersTable" layoutX="14.0" layoutY="60.0" prefHeight="466.0" prefWidth="672.0">
+        <columns>
+          <TableColumn fx:id="orderId" prefWidth="31.0" text="№" />
+          <TableColumn fx:id="order_node" prefWidth="94.0" text="Документ" />
+            <TableColumn fx:id="buyer" prefWidth="172.0" text="Покупатель" />
+            <TableColumn fx:id="admin" prefWidth="155.0" text="Администратор" />
+            <TableColumn fx:id="cost" prefWidth="89.0" text="Стоимость" />
+            <TableColumn fx:id="method" prefWidth="128.0" text="Способ оплаты" />
+        </columns>
+      </TableView>
+      <Button fx:id="newOrderBtn" layoutX="21.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleBtnCreateOrderAction" prefHeight="33.0" prefWidth="187.0" text="Новый заказ" />
+      <Button fx:id="changeSurgeonBtn" layoutX="792.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleBtnChangeSurgeonsAction" prefHeight="40.0" prefWidth="40.0" style="-fx-background-color: #ffffff00;" />
+      <Button fx:id="openDocBtn" layoutX="293.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleBtnOpenDocAction" prefHeight="33.0" prefWidth="187.0" text="Чек выбранного заказа" />
+      <Button fx:id="updateOrdersBtn" layoutX="599.0" layoutY="548.0" mnemonicParsing="false" onAction="#handleBtnUpdateOrdersAction" prefHeight="33.0" prefWidth="75.0" text="Обновить" />
+   </children>
+</AnchorPane>
